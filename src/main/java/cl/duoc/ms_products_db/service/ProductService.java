@@ -13,10 +13,14 @@ public class ProductService {
 
     @Autowired
     ProductRepository productRepository;
-
+    //get
     public List<Product> selectAllProducts(){
         List<Product> listProducts = productRepository.findAll();
         return listProducts;
-    
     }
+    //post
+    public Product createProduct(Product product) {
+        return productRepository.save(product);
+    }
+    
 }

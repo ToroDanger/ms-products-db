@@ -10,4 +10,6 @@ public class MsProductsDbApplication {
 		SpringApplication.run(MsProductsDbApplication.class, args);
 	}
 
+	
+
 }
