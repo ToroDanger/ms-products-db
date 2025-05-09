@@ -19,5 +19,5 @@ public class UserController {
     public List<User> selectAllUsers(){
         return userService.selectAllUsers();
     }
-
+    //aca van las apis 
 }
