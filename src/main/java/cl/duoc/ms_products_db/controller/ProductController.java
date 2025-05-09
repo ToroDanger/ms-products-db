@@ -6,18 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import cl.duoc.ms_products_db.model.entities.User;
-import cl.duoc.ms_products_db.service.UserService;
+import cl.duoc.ms_products_db.model.entities.Product;
+import cl.duoc.ms_products_db.service.ProductService;
 
 @RestController
-public class UserController {
+public class ProductController {
 
     @Autowired
-    UserService userService;
+    ProductService productService;
 
-    @GetMapping("/users")
-    public List<User> selectAllUsers(){
-        return userService.selectAllUsers();
+    @GetMapping("/products")
+    public List<Product> selectAllProducts(){
+        return productService.selectAllProducts();
     }
     //aca van las apis 
 }
